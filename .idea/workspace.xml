@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e33f3e8-5638-4c96-9c57-ff6e1f448304" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Costumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Costumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GenericType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Types.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vendor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572645559576</updated>
-      <workItem from="1572645563224" duration="11870000" />
+      <workItem from="1572645563224" duration="12664000" />
     </task>
     <servers />
   </component>

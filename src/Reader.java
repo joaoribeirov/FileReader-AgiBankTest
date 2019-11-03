@@ -19,8 +19,9 @@ public class Reader {
                 .map(line -> line.split("ç"))
                 .collect(Collectors.toList())
                 .forEach(line -> {
-                    GenericType type = GenericType.identify(line);
-                    type.logLine(logger);
+                    //GenericType type =
+                    GenericType.identify(line).store(logger);
+                    //type.logLine(logger);
                 });
 
             //todo Generate output file

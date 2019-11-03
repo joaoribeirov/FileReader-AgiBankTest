@@ -16,7 +16,7 @@ public abstract class GenericType {
         return null;
     }
 
-    public abstract void logLine(Logger logger);
+    public abstract void store(Logger logger);
 /*
     public Types getType() {
         return type;

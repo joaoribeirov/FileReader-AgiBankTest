@@ -23,7 +23,7 @@ public class Vendor extends GenericType {
     }
 
     @Override
-    public void logLine(Logger logger) {
+    public void store(Logger logger) {
         logger.addVendor(this);
     }
 }
