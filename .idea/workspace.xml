@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e33f3e8-5638-4c96-9c57-ff6e1f448304" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Costumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Costumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GenericType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Storage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Types.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vendor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572645559576</updated>
-      <workItem from="1572645563224" duration="12664000" />
+      <workItem from="1572645563224" duration="16382000" />
     </task>
     <servers />
   </component>
@@ -97,10 +100,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GenericType.java</url>
-          <line>9</line>
+          <line>7</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Storage.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Storage.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FileReader$Reader.ic" NAME="Reader Coverage Results" MODIFIED="1572810185721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

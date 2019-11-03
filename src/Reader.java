@@ -13,15 +13,14 @@ public class Reader {
 
         //read file into stream, try-with-resources
         try (Stream<String> stream = Files.lines(Paths.get(fileName), Charset.forName("UTF-8"))) {
-            Logger logger = new Logger();
+            Storage storage = new Storage();
 
             stream
                 .map(line -> line.split("ç"))
                 .collect(Collectors.toList())
                 .forEach(line -> {
-                    //GenericType type =
-                    GenericType.identify(line).store(logger);
-                    //type.logLine(logger);
+                    GenericType type = GenericType.identify(line);
+                    //type.store(storage);
                 });
 
             //todo Generate output file

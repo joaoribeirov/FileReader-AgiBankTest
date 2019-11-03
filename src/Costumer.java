@@ -1,7 +1,7 @@
 public class Costumer extends GenericType {
 
     @Override
-    public void store(Logger logger) {
+    public void store(Storage storage) {
 
     }
 }

@@ -1,5 +1,5 @@
 public enum Types {
-    VENDOR("001"),
+/*    VENDOR("001"),
     COSTUMER("002");
 
     public String identifier;
@@ -14,5 +14,5 @@ public enum Types {
             case "002": return new Costumer();
         }
         return new Vendor();
-    }
+    }*/
 }

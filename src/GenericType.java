@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public abstract class GenericType {
 
     private Types type;
@@ -16,7 +14,7 @@ public abstract class GenericType {
         return null;
     }
 
-    public abstract void store(Logger logger);
+    public abstract void store(Storage storage);
 /*
     public Types getType() {
         return type;
