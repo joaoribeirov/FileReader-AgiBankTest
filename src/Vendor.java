@@ -1,34 +1,29 @@
 public class Vendor extends GenericType {
 
-    static String CPF;
-    static String Name;
-    static String Salary;
+    private final String CPF;
+    private final String Name;
+    private final String Salary;
 
-    public Vendor() {
-        super(Types.VENDOR);
+    public Vendor(String[] buffer) {
+        this.CPF = buffer[1];
+        this.Name = buffer[2];
+        this.Salary = buffer[3];
     }
 
-    public static String getCPF() {
+    public String getCPF() {
         return CPF;
     }
 
-    public static void setCPF(String CPF) {
-        Vendor.CPF = CPF;
-    }
-
-    public static String getName() {
+    public String getName() {
         return Name;
     }
 
-    public static void setName(String name) {
-        Name = name;
-    }
-
-    public static String getSalary() {
+    public String getSalary() {
         return Salary;
     }
 
-    public static void setSalary(String salary) {
-        Salary = salary;
+    @Override
+    public void logLine(Logger logger) {
+        logger.addVendor(this);
     }
 }

@@ -1,12 +1,18 @@
 public enum Types {
-    VENDOR("001", new Vendor()),
-    COSTUMER("002", new Costumer());
+    VENDOR("001"),
+    COSTUMER("002");
 
-    private final String identifier;
-    private final GenericType type;
+    public String identifier;
 
-    Types(String identifier,  GenericType type){
+    Types(String identifier) {
         this.identifier = identifier;
-        this.type = type;
+    }
+
+    public GenericType identify(String identifier){
+        switch (identifier) {
+            case "001": return new Vendor();
+            case "002": return new Costumer();
+        }
+        return new Vendor();
     }
 }
