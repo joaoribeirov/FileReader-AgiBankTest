@@ -6,10 +6,10 @@ public abstract class GenericType {
             case "001":
                 return new Vendor(lineData);
             case "002":
-                return new Costumer();
+                return new Costumer(lineData);
         }
         return null;
     }
 
-    public abstract void store(Storage storage);
+    public abstract void store();
 }

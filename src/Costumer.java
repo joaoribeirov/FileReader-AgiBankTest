@@ -22,8 +22,7 @@ public class Costumer extends GenericType {
         return businessArea;
     }
 
-    @Override
-    public void store(Storage storage) {
-        storage.addCosutmer(this);
+    public void store() {
+        Storage.addCosutmer(this);
     }
 }

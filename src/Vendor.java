@@ -23,7 +23,7 @@ public class Vendor extends GenericType {
     }
 
     @Override
-    public void store(Storage storage) {
-        storage.addVendor(this);
+    public void store() {
+        Storage.addVendor(this);
     }
 }

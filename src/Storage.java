@@ -3,13 +3,13 @@ import java.util.List;
 
 public class Storage {
 
-    private List<Vendor> vendors;
-    private List<Costumer> costumers;
+    private static List<Vendor> vendors;
+    private static List<Costumer> costumers;
 
-    private Integer highestSale;
-    private Integer worstVendor;
+    private static Integer highestSale;
+    private static Integer worstVendor;
 
-    public Storage() {
+    public static void start() {
         vendors = new ArrayList<>();
         costumers = new ArrayList<>();
         highestSale = null;
@@ -32,21 +32,26 @@ public class Storage {
         this.costumers = costumers;
     }
 
-    public void addVendor(Vendor vendor){
+    public static void addVendor(Vendor vendor){
         vendors.add(vendor);
+        System.out.println(vendor.toString());
 //        Integer num = getNumberOfSales();
 
-/*        if (this.WorstVendor == null) vendors.size();
+/*
+        if (this.WorstVendor == null) vendors.size();
         else{
             System.out.println("Else do worst vendor");
-        }*/
+        }
+*/
     }
 
-    public void addCosutmer(Costumer costumer){
+    public static void addCosutmer(Costumer costumer){
         costumers.add(costumer);
+        System.out.println(costumer.toString());
     }
 
-/*    private Integer getNumberOfSales(){
+/*
+    private Integer getNumberOfSales(){
         Map<Long, Long> totalSales = vendors.stream()
                 .collect(Collectors.groupingBy(Vendor::getCPF, Collectors.counting()));
         return null;
