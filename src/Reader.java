@@ -19,8 +19,7 @@ public class Reader {
                 .map(line -> line.split("ç"))
                 .collect(Collectors.toList())
                 .forEach(line -> {
-                    GenericType type = GenericType.identify(line);
-                    //type.store(storage); blau
+                    GenericType.identify(line).store(storage);
                 });
 
             //todo Generate output file

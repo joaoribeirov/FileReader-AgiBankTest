@@ -1,15 +1,20 @@
-import java.util.LinkedHashMap;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 public class Storage {
 
     private List<Vendor> vendors;
     private List<Costumer> costumers;
 
-    private Integer HighestSale;
-    private Integer WorstVendor;
+    private Integer highestSale;
+    private Integer worstVendor;
+
+    public Storage() {
+        vendors = new ArrayList<>();
+        costumers = new ArrayList<>();
+        highestSale = null;
+        worstVendor = null;
+    }
 
     public List<Vendor> getVendors() {
         return vendors;
@@ -45,5 +50,6 @@ public class Storage {
         Map<Long, Long> totalSales = vendors.stream()
                 .collect(Collectors.groupingBy(Vendor::getCPF, Collectors.counting()));
         return null;
-    }*/
+    }
+*/
 }
