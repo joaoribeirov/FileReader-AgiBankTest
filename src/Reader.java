@@ -11,7 +11,6 @@ public class Reader {
 
         String fileName = "c://files/lines.txt";
 
-        //read file into stream, try-with-resources
         try (Stream<String> stream = Files.lines(Paths.get(fileName), Charset.forName("UTF-8"))) {
             Storage storage = new Storage();
 
