@@ -20,7 +20,7 @@ public class Reader {
                 .collect(Collectors.toList())
                 .forEach(line -> {
                     GenericType type = GenericType.identify(line);
-                    //type.store(storage);
+                    //type.store(storage); blau
                 });
 
             //todo Generate output file
