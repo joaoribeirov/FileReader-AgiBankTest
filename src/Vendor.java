@@ -10,18 +10,6 @@ public class Vendor extends GenericType {
         this.Salary = Double.parseDouble(buffer[3]);
     }
 
-    public Long getCPF() {
-        return CPF;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public Double getSalary() {
-        return Salary;
-    }
-
     @Override
     public void store() {
         Storage.addVendor(this);

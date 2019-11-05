@@ -7,12 +7,4 @@ public class Product {
         this.id = Long.valueOf(lineData[0]);
         this.price = Double.valueOf(lineData[2]);
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
 }

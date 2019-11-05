@@ -15,16 +15,4 @@ public class ProductSale {
         this.product = new Product(product);
         this.quantity = Long.valueOf(product[1]);
     }
-
-    public Double getSaleID() {
-        return saleID;
-    }
-
-    public Product getProduct() {
-        return product;
-    }
-
-    public Long getQuantity() {
-        return quantity;
-    }
 }

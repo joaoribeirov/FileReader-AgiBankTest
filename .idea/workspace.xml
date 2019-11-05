@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e33f3e8-5638-4c96-9c57-ff6e1f448304" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ProductSale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenericType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/lines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/lines.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Costumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Costumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductSale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vendor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +83,7 @@
       <workItem from="1572898193927" duration="4021000" />
       <workItem from="1572961231220" duration="594000" />
       <workItem from="1572961834498" duration="2680000" />
+      <workItem from="1572973468843" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="Teste commit dessincronizado.">
       <created>1572888560759</created>
@@ -122,24 +124,24 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Sale.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Sale.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GenericType.java</url>
           <line>10</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Storage.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sale.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="29" />
+          <line>12</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Product.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
