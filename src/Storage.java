@@ -5,6 +5,7 @@ public class Storage {
 
     private static List<Vendor> vendors;
     private static List<Costumer> costumers;
+    private static List<Sale> sales;
 
     private static Integer highestSale;
     private static Integer worstVendor;
@@ -12,6 +13,7 @@ public class Storage {
     public static void start() {
         vendors = new ArrayList<>();
         costumers = new ArrayList<>();
+        sales = new ArrayList<>();
         highestSale = null;
         worstVendor = null;
     }
@@ -48,6 +50,11 @@ public class Storage {
     public static void addCosutmer(Costumer costumer){
         costumers.add(costumer);
         System.out.println(costumer.toString());
+    }
+
+    public static void addSale(Sale sale){
+        sales.add(sale);
+        System.out.println(sales.toString());
     }
 
 /*

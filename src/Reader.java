@@ -13,11 +13,11 @@ public class Reader {
 
         try (Stream<String> stream = Files.lines(Paths.get(fileName), Charset.forName("UTF-8"))) {
             Storage.start();
-            
+
             stream
                 .map(line -> line.split("ç"))
                 .collect(Collectors.toList())
-                .forEach(line -> {GenericType.identify(line).store();});
+                .forEach(line -> GenericType.identify(line).store());
 
             //todo Generate output file
 
