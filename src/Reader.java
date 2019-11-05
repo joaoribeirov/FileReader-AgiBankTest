@@ -9,7 +9,7 @@ public class Reader {
 
     public static void main(String[] args) {
 
-        String fileName = "c://files/lines.txt";
+        String fileName = "C:\\_dev\\Projects\\Tests\\FileReader\\files/lines.txt";
 
         try (Stream<String> stream = Files.lines(Paths.get(fileName), Charset.forName("UTF-8"))) {
             Storage.start();

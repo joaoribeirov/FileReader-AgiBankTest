@@ -5,7 +5,7 @@ public class Product {
 
     public Product(String[] lineData) {
         this.id = Long.valueOf(lineData[0]);
-        this.price = Double.valueOf(lineData[1]);
+        this.price = Double.valueOf(lineData[2]);
     }
 
     public Long getId() {

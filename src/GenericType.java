@@ -7,6 +7,8 @@ public abstract class GenericType {
                 return new Vendor(lineData);
             case "002":
                 return new Costumer(lineData);
+            case "003":
+                return new Sale(lineData);
         }
         return null;
     }

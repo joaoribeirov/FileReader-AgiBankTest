@@ -5,26 +5,28 @@ import java.util.stream.Collectors;
 
 public class Sale extends GenericType{
 
-    private final Long id;
-    private final List<Product> products;
+    private final Double id;
+    private final List<ProductSale> products;
     private final String salesman;
 
     public Sale(String[] lineData) {
-        this.id = Long.valueOf(lineData[0]);
+        this.id = Double.valueOf(lineData[1]);
         this.products = new ArrayList<>();
-        this.salesman = lineData[2];
+        this.salesman = lineData[4];
 
-        Arrays.stream(lineData)
-                .map(product -> product.split(","))
-                .collect(Collectors.toList())
-                .forEach(product -> products.add(new Product(product)));
+        String[] splited = lineData[2].replace("[", "").replace("]", "").split(",");
+
+        Arrays.stream(splited)
+                .forEach(product -> {
+                    products.add(new ProductSale(this.id, product.split("-")));
+                });
     }
 
-    public Long getId() {
+    public Double getId() {
         return id;
     }
 
-    public List<Product> getProducts() {
+    public List<ProductSale> getProducts() {
         return products;
     }
 
