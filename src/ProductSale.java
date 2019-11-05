@@ -1,18 +1,18 @@
+import java.math.BigDecimal;
+
 public class ProductSale {
 
     private final Double saleID;
     private final Product product;
-    private final Long quantity;
-
-    public ProductSale(String saleID, String[] product, String quantity) {
-        this.saleID = Double.valueOf(saleID);
-        this.product = new Product(product);
-        this.quantity = Long.valueOf(quantity);
-    }
+    private final Double quantity;
 
     public ProductSale(Double saleID, String[] product) {
-        this.saleID = Double.valueOf(saleID);
+        this.saleID = new Double(saleID);
         this.product = new Product(product);
-        this.quantity = Long.valueOf(product[1]);
+        this.quantity = new Double(product[1]);
+    }
+
+    public Double getTotalValue(){
+        return this.product.getValue() * this.quantity;
     }
 }

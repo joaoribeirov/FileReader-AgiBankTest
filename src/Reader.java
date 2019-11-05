@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Collectors;
@@ -11,13 +10,16 @@ public class Reader {
 
         String fileName = "C:\\_dev\\Projects\\Tests\\FileReader\\files/lines.txt";
 
-        try (Stream<String> stream = Files.lines(Paths.get(fileName), Charset.forName("UTF-8"))) {
+        try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
             Storage.start();
 
             stream
                 .map(line -> line.split("ç"))
                 .collect(Collectors.toList())
                 .forEach(line -> GenericType.identify(line).store());
+
+            //Storage.highestSale();
+            //Storage.getNumberOfSales();
 
             //todo Generate output file
 

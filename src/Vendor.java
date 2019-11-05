@@ -1,11 +1,11 @@
 public class Vendor extends GenericType {
 
-    private final Long CPF;
+    private final String cpf;
     private final String Name;
     private final Double Salary;
 
     public Vendor(String[] buffer) {
-        this.CPF = Long.parseLong(buffer[1]);
+        this.cpf = buffer[1];
         this.Name = buffer[2];
         this.Salary = Double.parseDouble(buffer[3]);
     }
@@ -13,5 +13,9 @@ public class Vendor extends GenericType {
     @Override
     public void store() {
         Storage.addVendor(this);
+    }
+
+    public String getCpf() {
+        return this.cpf;
     }
 }

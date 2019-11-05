@@ -17,9 +17,17 @@ public class Sale extends GenericType{
         String[] splited = lineData[2].replace("[", "").replace("]", "").split(",");
 
         Arrays.stream(splited)
-                .forEach(product -> {
-                    products.add(new ProductSale(this.id, product.split("-")));
-                });
+                .forEach(product -> products.add(new ProductSale(this.id, product.split("-"))));
+    }
+
+    public List<ProductSale> getProducts() {
+        return products;
+    }
+
+    public Double getTotalValue(){
+        return products.stream()
+                .mapToDouble(v -> v.getTotalValue())
+                .sum();
     }
 
     @Override

@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Storage {
 
@@ -37,7 +37,7 @@ public class Storage {
     public static void addVendor(Vendor vendor){
         vendors.add(vendor);
         System.out.println(vendor.toString());
-//        Integer num = getNumberOfSales();
+        //Integer num = vendor.getNumberOfSales();
 
 /*
         if (this.WorstVendor == null) vendors.size();
@@ -57,11 +57,32 @@ public class Storage {
         System.out.println(sales.toString());
     }
 
-/*
-    private Integer getNumberOfSales(){
-        Map<Long, Long> totalSales = vendors.stream()
-                .collect(Collectors.groupingBy(Vendor::getCPF, Collectors.counting()));
-        return null;
+    public static Integer totalCostumers(){
+        return costumers.size();
     }
-*/
+
+    public static Integer totalVendors(){
+        return vendors.size();
+    }
+
+    /*public static  worstVendor(){
+        return sales.stream()
+                .mapToDouble(sale -> sale.getTotalValue())
+                .min();
+    }*/
+
+    private static OptionalDouble highestSale(){
+        return sales.stream()
+                .mapToDouble(sale -> sale.getTotalValue())
+                .min();
+    }
+
+
+    public static String getCpfWorstVendor(){
+        return vendors.stream()
+                .collect(Collectors.groupingBy(Vendor::getCpf, Collectors.counting()))
+                .entrySet().stream()
+                .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toList()).get(0).getKey();
+    }
 }
