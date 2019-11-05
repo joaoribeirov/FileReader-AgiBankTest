@@ -1,5 +1,3 @@
-import java.math.BigDecimal;
-
 public class ProductSale {
 
     private final Double saleID;

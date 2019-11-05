@@ -1,3 +1,5 @@
+import com.sun.javafx.image.IntPixelGetter;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -71,10 +73,10 @@ public class Storage {
                 .min();
     }*/
 
-    private OptionalDouble highestSale(){
-        return sales.stream()
+    public Integer getHighestSale(){
+        return (int) sales.stream()
                 .mapToDouble(sale -> sale.getTotalValue())
-                .min();
+                .min().getAsDouble();
     }
 
 

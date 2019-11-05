@@ -25,7 +25,7 @@ public class Reader {
                 .collect(Collectors.toList())
                 .forEach(line -> GenericType.identify(line).store(storage));
 
-            Output.generateFile();
+            Output.generateFile(file, storage);
         } catch (IOException e) {
             e.printStackTrace();
         }
