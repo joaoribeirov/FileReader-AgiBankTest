@@ -1,4 +1,0 @@
-Total Costumers: 1
-Total Vendors: 4
-ID of the highest sale: 90
-CPF of the worst vendor: 91254218084

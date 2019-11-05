@@ -6,11 +6,12 @@ import br.com.joaovieira.filereader.data.Storage;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Properties;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Reader {
-    public static void readFile(Path file) {
+    public static void readFile(Path file, Properties properties) {
         try {
             Storage storage = new Storage();
 
@@ -21,7 +22,7 @@ public class Reader {
                 .collect(Collectors.toList())
                 .forEach(line -> GenericType.identify(line).store(storage));
 
-            Output.generateFile(file, storage);
+            Output.generateFile(file, storage, properties.getProperty("OUTPUT_FILE_PATH"));
         } catch (IOException e) {
             e.printStackTrace();
         }

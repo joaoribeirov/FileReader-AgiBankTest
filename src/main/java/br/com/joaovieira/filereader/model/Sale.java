@@ -23,10 +23,6 @@ public class Sale extends GenericType{
                 .forEach(product -> products.add(new ProductSale(this.id, product.split("-"))));
     }
 
-    public List<ProductSale> getProducts() {
-        return products;
-    }
-
     public Double getTotalValue(){
         return products.stream()
                 .mapToDouble(v -> v.getTotalValue())
