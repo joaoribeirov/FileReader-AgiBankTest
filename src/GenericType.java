@@ -13,5 +13,5 @@ public abstract class GenericType {
         return null;
     }
 
-    public abstract void store();
+    public abstract void store(Storage storage);
 }

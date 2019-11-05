@@ -1,36 +1,33 @@
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.Path;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Reader {
 
     public static void main(String[] args) {
+        try {
+            FileExplorer.searchFilePaths().stream().forEach(file -> readFile(file));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-        String fileName = "C:\\_dev\\Projects\\Tests\\FileReader\\files/lines.txt";
+    private static void readFile(Path file) {
+        try {
+            Storage storage = new Storage();
 
-        try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
-            Storage.start();
+            Stream<String> stream = Files.lines(file);
 
             stream
                 .map(line -> line.split("ç"))
                 .collect(Collectors.toList())
-                .forEach(line -> GenericType.identify(line).store());
+                .forEach(line -> GenericType.identify(line).store(storage));
 
-            //Storage.highestSale();
-            //Storage.getNumberOfSales();
-
-            //todo Generate output file
-
-            //aplica funcao ex .map(x-> x*x)
-            //filtra atraves de um predicado .filter(line -> line.split('ç'))
-            //.forEach(System.out::println);
-            //.collect(Collectors.toList()).stream()
-
+            Output.generateFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

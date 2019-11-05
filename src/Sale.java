@@ -31,7 +31,7 @@ public class Sale extends GenericType{
     }
 
     @Override
-    public void store() {
-        Storage.addSale(this);
+    public void store(Storage storage) {
+        storage.addSale(this);
     }
 }

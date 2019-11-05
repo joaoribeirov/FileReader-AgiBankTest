@@ -3,14 +3,14 @@ import java.util.stream.Collectors;
 
 public class Storage {
 
-    private static List<Vendor> vendors;
-    private static List<Costumer> costumers;
-    private static List<Sale> sales;
+    private List<Vendor> vendors;
+    private List<Costumer> costumers;
+    private List<Sale> sales;
 
-    private static Integer highestSale;
-    private static Integer worstVendor;
+    private Integer highestSale;
+    private Integer worstVendor;
 
-    public static void start() {
+    public Storage() {
         vendors = new ArrayList<>();
         costumers = new ArrayList<>();
         sales = new ArrayList<>();
@@ -34,7 +34,7 @@ public class Storage {
         this.costumers = costumers;
     }
 
-    public static void addVendor(Vendor vendor){
+    public void addVendor(Vendor vendor){
         vendors.add(vendor);
         System.out.println(vendor.toString());
         //Integer num = vendor.getNumberOfSales();
@@ -47,21 +47,21 @@ public class Storage {
 */
     }
 
-    public static void addCosutmer(Costumer costumer){
+    public void addCosutmer(Costumer costumer){
         costumers.add(costumer);
         System.out.println(costumer.toString());
     }
 
-    public static void addSale(Sale sale){
+    public void addSale(Sale sale){
         sales.add(sale);
         System.out.println(sales.toString());
     }
 
-    public static Integer totalCostumers(){
+    public Integer totalCostumers(){
         return costumers.size();
     }
 
-    public static Integer totalVendors(){
+    public Integer totalVendors(){
         return vendors.size();
     }
 
@@ -71,14 +71,14 @@ public class Storage {
                 .min();
     }*/
 
-    private static OptionalDouble highestSale(){
+    private OptionalDouble highestSale(){
         return sales.stream()
                 .mapToDouble(sale -> sale.getTotalValue())
                 .min();
     }
 
 
-    public static String getCpfWorstVendor(){
+    public String getCpfWorstVendor(){
         return vendors.stream()
                 .collect(Collectors.groupingBy(Vendor::getCpf, Collectors.counting()))
                 .entrySet().stream()
