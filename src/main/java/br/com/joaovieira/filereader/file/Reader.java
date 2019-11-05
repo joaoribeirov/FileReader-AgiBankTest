@@ -1,3 +1,8 @@
+package br.com.joaovieira.filereader.file;
+
+import br.com.joaovieira.filereader.model.GenericType;
+import br.com.joaovieira.filereader.data.Storage;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -5,16 +10,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Reader {
-
-    public static void main(String[] args) {
-        try {
-            FileExplorer.searchFilePaths().stream().forEach(file -> readFile(file));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private static void readFile(Path file) {
+    public static void readFile(Path file) {
         try {
             Storage storage = new Storage();
 

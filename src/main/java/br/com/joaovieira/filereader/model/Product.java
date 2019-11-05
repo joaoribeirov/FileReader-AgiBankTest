@@ -1,3 +1,5 @@
+package br.com.joaovieira.filereader.model;
+
 public class Product {
 
     private final Double id;

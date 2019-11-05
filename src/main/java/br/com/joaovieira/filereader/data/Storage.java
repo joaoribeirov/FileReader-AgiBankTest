@@ -1,4 +1,8 @@
-import com.sun.javafx.image.IntPixelGetter;
+package br.com.joaovieira.filereader.data;
+
+import br.com.joaovieira.filereader.model.Costumer;
+import br.com.joaovieira.filereader.model.Sale;
+import br.com.joaovieira.filereader.model.Vendor;
 
 import java.util.*;
 import java.util.stream.Collectors;

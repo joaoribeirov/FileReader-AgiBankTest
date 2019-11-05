@@ -1,3 +1,7 @@
+package br.com.joaovieira.filereader.model;
+
+import br.com.joaovieira.filereader.data.Storage;
+
 public abstract class GenericType {
 
     public static GenericType identify(String[] lineData){

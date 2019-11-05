@@ -1,3 +1,6 @@
+package br.com.joaovieira.filereader.file;
+
+import br.com.joaovieira.filereader.data.Storage;
 import org.apache.commons.io.FilenameUtils;
 
 import java.io.FileWriter;

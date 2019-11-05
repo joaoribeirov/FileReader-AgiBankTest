@@ -1,3 +1,7 @@
+package br.com.joaovieira.filereader.model;
+
+import br.com.joaovieira.filereader.data.Storage;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
