@@ -20,33 +20,9 @@ public class Storage {
         worstVendor = null;
     }
 
-    public List<Vendor> getVendors() {
-        return vendors;
-    }
-
-    public void setVendors(List<Vendor> vendors) {
-        this.vendors = vendors;
-    }
-
-    public List<Costumer> getCostumers() {
-        return costumers;
-    }
-
-    public void setCostumers(List<Costumer> costumers) {
-        this.costumers = costumers;
-    }
-
     public void addVendor(Vendor vendor){
         vendors.add(vendor);
         System.out.println(vendor.toString());
-        //Integer num = vendor.getNumberOfSales();
-
-/*
-        if (this.WorstVendor == null) vendors.size();
-        else{
-            System.out.println("Else do worst vendor");
-        }
-*/
     }
 
     public void addCosutmer(Costumer costumer){
@@ -66,12 +42,6 @@ public class Storage {
     public Integer totalVendors(){
         return vendors.size();
     }
-
-    /*public static  worstVendor(){
-        return sales.stream()
-                .mapToDouble(sale -> sale.getTotalValue())
-                .min();
-    }*/
 
     public Integer getHighestSale(){
         return (int) sales.stream()

@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e33f3e8-5638-4c96-9c57-ff6e1f448304" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/out/lines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileReader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FileReader.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Costumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileExplorer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenericType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductSale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Storage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Types.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vendor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Costumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Costumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vendor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +106,7 @@
       <workItem from="1572961231220" duration="594000" />
       <workItem from="1572961834498" duration="2680000" />
       <workItem from="1572973468843" duration="8399000" />
-      <workItem from="1572984535310" duration="2285000" />
+      <workItem from="1572984535310" duration="3156000" />
     </task>
     <task id="LOCAL-00001" summary="Teste commit dessincronizado.">
       <created>1572888560759</created>

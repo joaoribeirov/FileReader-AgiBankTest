@@ -1,13 +1,13 @@
 public class Vendor extends GenericType {
 
     private final String cpf;
-    private final String Name;
-    private final Double Salary;
+    private final String name;
+    private final Double salary;
 
     public Vendor(String[] buffer) {
         this.cpf = buffer[1];
-        this.Name = buffer[2];
-        this.Salary = Double.parseDouble(buffer[3]);
+        this.name = buffer[2];
+        this.salary = Double.parseDouble(buffer[3]);
     }
 
     @Override

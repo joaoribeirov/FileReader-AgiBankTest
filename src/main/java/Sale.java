@@ -13,9 +13,9 @@ public class Sale extends GenericType{
         this.products = new ArrayList<>();
         this.salesman = lineData[3];
 
-        String[] splited = lineData[2].replace("[", "").replace("]", "").split(",");
+        String[] splitedLine = lineData[2].replace("[", "").replace("]", "").split(",");
 
-        Arrays.stream(splited)
+        Arrays.stream(splitedLine)
                 .forEach(product -> products.add(new ProductSale(this.id, product.split("-"))));
     }
 
