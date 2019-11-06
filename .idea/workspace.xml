@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1e33f3e8-5638-4c96-9c57-ff6e1f448304" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/in/lines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/in/lines.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/out/lines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/out/lines.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/data/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/data/Storage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/file/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/file/Reader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
