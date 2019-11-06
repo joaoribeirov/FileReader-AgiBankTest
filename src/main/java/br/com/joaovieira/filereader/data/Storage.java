@@ -1,6 +1,7 @@
 package br.com.joaovieira.filereader.data;
 
 import br.com.joaovieira.filereader.model.Costumer;
+import br.com.joaovieira.filereader.model.ProductSale;
 import br.com.joaovieira.filereader.model.Sale;
 import br.com.joaovieira.filereader.model.Vendor;
 
@@ -29,13 +30,6 @@ public class Storage {
         vendors.add(vendor);
     }
 
-    public String getWorstVendorName() {
-        return sales.stream()
-                .collect(Collectors.groupingBy(Sale::getSalesman,
-                        Collectors.minBy(Comparator.comparing(Sale::getTotalValue))))
-                .entrySet().iterator().next().getKey();
-    }
-
     public void addCosutmer(Costumer costumer){
         costumers.add(costumer);
     }
@@ -43,26 +37,6 @@ public class Storage {
     public void addSale(Sale sale){
         sales.add(sale);
         checkHighestSale(sale);
-    }
-
-    private void checkHighestSale(Sale sale) {
-        if (highestSale == null || highestSale.getTotalValue() < sale.getTotalValue())
-            highestSale = sale;
-    }
-
-    public Integer totalCostumers(){
-        return costumers.size();
-    }
-
-    public Integer totalVendors(){
-        return vendors.size();
-    }
-
-    /**
-     * @return
-     */
-    public Integer getHighestSale() {
-        return highestSale.getId();
     }
 
     public List<Vendor> getVendors() {
@@ -75,5 +49,40 @@ public class Storage {
 
     public List<Sale> getSales() {
         return sales;
+    }
+
+    public Integer totalCostumers(){
+        return costumers.size();
+    }
+
+    public Integer totalVendors(){
+        return vendors.size();
+    }
+
+    private void checkHighestSale(Sale sale) {
+        if (highestSale == null || highestSale.getTotalValue() < sale.getTotalValue())
+            highestSale = sale;
+    }
+
+    public Integer getHighestSale() {
+        return highestSale.getId();
+    }
+
+    public String getWorstVendorName() {
+        return sales.stream()
+                .collect(Collectors.groupingBy(Sale::getSalesman,
+                        Collectors.summingDouble(Sale::getTotalValue)))
+                .entrySet().stream()
+                .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toList())
+                .get(0).getKey();
+    }
+
+    public void finalize(){
+        try {
+            super.finalize();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
     }
 }

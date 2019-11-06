@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e33f3e8-5638-4c96-9c57-ff6e1f448304" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/joaovieira/filereader/model/ModelsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileReader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FileReader.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/in/lines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/in/lines.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/in/teste.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/in/teste.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/out/lines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/out/lines.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/data/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/data/Storage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/file/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/file/Output.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/file/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/file/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/model/Costumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/model/Costumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/model/ProductSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/model/ProductSale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/model/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/model/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/model/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/joaovieira/filereader/model/Vendor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/FileReader.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,6 +48,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/br/com/joaovieira/filereader" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/data/in" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />

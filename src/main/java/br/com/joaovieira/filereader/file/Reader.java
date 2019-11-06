@@ -19,6 +19,7 @@ public class Reader {
             lineInterpreter(stream, storage);
 
             Output.generateFile(file, storage, properties.getProperty("OUTPUT_FILE_PATH"));
+            storage.finalize();
         } catch (IOException e) {
             e.printStackTrace();
         }
