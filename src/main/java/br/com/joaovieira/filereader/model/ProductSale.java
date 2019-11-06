@@ -2,14 +2,26 @@ package br.com.joaovieira.filereader.model;
 
 public class ProductSale {
 
-    private final Double saleID;
+    private final Integer saleID;
     private final Product product;
-    private final Double quantity;
+    private final Integer quantity;
 
-    public ProductSale(Double saleID, String[] product) {
-        this.saleID = new Double(saleID);
+    public ProductSale(Integer saleID, String[] product) {
+        this.saleID = new Integer(saleID);
         this.product = new Product(product);
-        this.quantity = new Double(product[1]);
+        this.quantity = new Integer(product[1]);
+    }
+
+    public Integer getSaleID() {
+        return saleID;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
     }
 
     public Double getTotalValue(){

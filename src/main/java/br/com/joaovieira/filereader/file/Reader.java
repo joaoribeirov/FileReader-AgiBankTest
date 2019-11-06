@@ -14,17 +14,19 @@ public class Reader {
     public static void readFile(Path file, Properties properties) {
         try {
             Storage storage = new Storage();
-
             Stream<String> stream = Files.lines(file);
 
-            stream
-                .map(line -> line.split("ç"))
-                .collect(Collectors.toList())
-                .forEach(line -> GenericType.identify(line).store(storage));
+            lineInterpreter(stream, storage);
 
             Output.generateFile(file, storage, properties.getProperty("OUTPUT_FILE_PATH"));
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void lineInterpreter(Stream<String> stream, Storage storage){
+        stream.map(line -> line.split("ç"))
+                .collect(Collectors.toList())
+                .forEach(line -> GenericType.identify(line).store(storage));
     }
 }

@@ -4,7 +4,6 @@ import br.com.joaovieira.filereader.file.FileExplorer;
 import br.com.joaovieira.filereader.file.Reader;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 

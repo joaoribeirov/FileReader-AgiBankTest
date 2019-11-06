@@ -1,0 +1,4 @@
+Total Costumers: 1
+Total Vendors: 4
+ID of the highest sale: 2
+Name of the worst vendor: Joao

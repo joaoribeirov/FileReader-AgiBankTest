@@ -17,7 +17,7 @@ public class Output {
             fileWriter.write(lineConstructor("Total Costumers: " + storage.totalCostumers()));
             fileWriter.write(lineConstructor("Total Vendors: " + storage.totalVendors()));
             fileWriter.write(lineConstructor("ID of the highest sale: " + storage.getHighestSale()));
-            fileWriter.write(lineConstructor("CPF of the worst vendor: " + storage.getCpfWorstVendor()));
+            fileWriter.write(lineConstructor("Name of the worst vendor: " + storage.getWorstVendorName()));
 
             fileWriter.close();
         } catch (IOException e) {
@@ -29,5 +29,4 @@ public class Output {
     private static String lineConstructor(String msg){
         return new String(msg + System.lineSeparator());
     }
-
 }

@@ -14,12 +14,20 @@ public class Vendor extends GenericType {
         this.salary = Double.parseDouble(buffer[3]);
     }
 
-    @Override
-    public void store(Storage storage) {
-        storage.addVendor(this);
+    public String getName() {
+        return name;
     }
 
     public String getCpf() {
-        return this.cpf;
+        return cpf;
+    }
+
+    public Double getSalary() {
+        return salary;
+    }
+
+    @Override
+    public void store(Storage storage) {
+        storage.addVendor(this);
     }
 }

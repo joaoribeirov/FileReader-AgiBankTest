@@ -8,12 +8,12 @@ import java.util.List;
 
 public class Sale extends GenericType{
 
-    private final Double id;
+    private final Integer id;
     private final List<ProductSale> products;
     private final String salesman;
 
     public Sale(String[] lineData) {
-        this.id = Double.valueOf(lineData[1]);
+        this.id = Integer.valueOf(lineData[1]);
         this.products = new ArrayList<>();
         this.salesman = lineData[3];
 
@@ -27,6 +27,18 @@ public class Sale extends GenericType{
         return products.stream()
                 .mapToDouble(v -> v.getTotalValue())
                 .sum();
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getSalesman() {
+        return salesman;
+    }
+
+    public List<ProductSale> getProducts() {
+        return products;
     }
 
     @Override

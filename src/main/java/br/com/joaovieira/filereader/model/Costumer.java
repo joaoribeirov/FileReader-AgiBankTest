@@ -14,6 +14,18 @@ public class Costumer extends GenericType {
         this.businessArea = buffer[3];
     }
 
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getBusinessArea() {
+        return businessArea;
+    }
+
     @Override
     public void store(Storage storage) {
         storage.addCosutmer(this);

@@ -2,12 +2,20 @@ package br.com.joaovieira.filereader.model;
 
 public class Product {
 
-    private final Double id;
+    private final Integer id;
     private final Double price;
 
     public Product(String[] lineData) {
-        this.id = Double.valueOf(lineData[0]);
-        this.price = Double.valueOf((lineData[2]));
+        this.id = new Integer(lineData[0]);
+        this.price = new Double(lineData[2]);
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Double getPrice() {
+        return price;
     }
 
     public Double getValue(){
